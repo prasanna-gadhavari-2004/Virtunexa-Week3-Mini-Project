@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  padding: 20px;
+  background: #f9f9f9;
+}
+
+/* Navbar */
+.navbar {
+  background: #333;
+  padding: 1rem;
+  text-align: center;
+}
+
+.navbar ul {
+  list-style: none;
+}
+
+.navbar ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.navbar ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Accordion */
+.accordion-container {
+  max-width: 600px;
+  margin: 30px auto;
+}
+
+.accordion-item {
+  background: #fff;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.accordion-button {
+  width: 100%;
+  padding: 15px;
+  text-align: left;
+  border: none;
+  background: #eee;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.1rem;
+}
+
+.accordion-content {
+  padding: 15px;
+  display: none;
+  background: #fafafa;
+}
+
+.accordion-button.active + .accordion-content {
+  display: block;
+}
+
+.accordion-button.active .icon {
+  transform: rotate(180deg);
+}
+
+/* Sections */
+section {
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff;
+  max-width: 800px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .navbar ul li {
+    display: block;
+    margin: 10px 0;
+  }
+}
